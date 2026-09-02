@@ -8355,25 +8355,12 @@ if (
 
           .then(
             () => {
-
-              alert(
-                'Message Sent!'
-              );
-
-
+              alert('Message Sent!');
               form.reset();
-
-
               if (submitButton) {
-
-                submitButton.disabled =
-                  false;
-
-                submitButton.innerHTML =
-                  'Send Message';
-
+                submitButton.disabled =false;
+                submitButton.innerHTML ='Send Message';
               }
-
             }
           )
 
@@ -8383,14 +8370,10 @@ if (
               console.error(
                 error
               );
-
-
               alert(
                 error.text ||
                 JSON.stringify(error)
               );
-
-
               if (submitButton) {
 
                 submitButton.disabled =
@@ -8400,15 +8383,11 @@ if (
                   'Send Message';
 
               }
-
             }
           );
-
       }
-    );
-
+        );
   }
-
 }
   </script>
 </body>
